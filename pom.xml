@@ -5,7 +5,7 @@
     <parent>
         <groupId>org.springframework.boot</groupId>
         <artifactId>spring-boot-starter-parent</artifactId>
-        <version>2.5.4</version>
+        <version>2.4.4</version>
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.black</groupId>
@@ -17,13 +17,18 @@
         <java.version>11</java.version>
 		<org.projectlombok.version>1.18.20</org.projectlombok.version>
 		<org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
-		<org.querydsl.version>5.0.0</org.querydsl.version>
+		<org.querydsl.version>4.4.0</org.querydsl.version>
 		<org.apache.maven.compiler-plugin>3.8.1</org.apache.maven.compiler-plugin>
     </properties>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-validation</artifactId>
         </dependency>
 
         <dependency>
@@ -78,6 +83,11 @@
 			<artifactId>querydsl-jpa</artifactId>
 			<version>${org.querydsl.version}</version>
 		</dependency>
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.11</version>
+        </dependency>
 
     </dependencies>
 
